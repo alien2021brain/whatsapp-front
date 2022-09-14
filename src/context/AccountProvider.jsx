@@ -16,7 +16,9 @@ const AccountProvider = ({children}) => {
     const socket = useRef();
 
     useEffect(() => {
-        socket.current = io('https://testserver-ltxy.onrender.com');
+        socket.current = io('https://testserver-ltxy.onrender.com',{
+         withCredentials: true
+        });
     }, [])
 
     return (
