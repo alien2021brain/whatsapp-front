@@ -76,7 +76,7 @@ const Conversation = ({ user }) => {
                     }
                 </Container>
                 <Box>
-                    <Text>{message?.text?.includes('https://whats-app-web.onrender.com') ? 'media' : message.text}</Text>
+                    <Text>{message?.text?.includes('.pdf') ? 'media' : message.text}</Text>
                 </Box>
             </Box>
         </Component>
