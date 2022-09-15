@@ -40,7 +40,7 @@ export const getConversation = async (users) => {
 
 export const getMessages = async (id) => {
     try {
-        let response = await axios.get(`/message/get/${id}`);
+        let response = await axios.get(`https://testserver-ltxy.onrender.com/message/get/${id}`);
         return response.data
     } catch (error) {
         console.log('Error while calling getMessages API ', error);
