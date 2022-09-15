@@ -14,7 +14,7 @@ export const addUser = async (data) => {
 
 export const getUsers = async () => {
     try {
-        let response = await axios.get("/users");
+        let response = await axios.get("https://testserver-ltxy.onrender.com/users");
         return response.data
     } catch (error) {
         console.log('Error while calling getUsers API ', error);
