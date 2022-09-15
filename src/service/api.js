@@ -1,7 +1,7 @@
   
 import axios from 'axios';
 
-// const url = "https://testserver-ltxy.onrender.com";
+const url = "https://testserver-ltxy.onrender.com";
 
 export const addUser = async (data) => {
     try {
@@ -40,7 +40,7 @@ export const getConversation = async (users) => {
 
 export const getMessages = async (id) => {
     try {
-        let response = await axios.get(`https://testserver-ltxy.onrender.com/message/get/${id}`);
+        let response = await axios.get(`${url}/message/get/${id}`);
         return response.data
     } catch (error) {
         console.log('Error while calling getMessages API ', error);
